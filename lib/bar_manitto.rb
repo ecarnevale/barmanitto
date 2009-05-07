@@ -1,5 +1,7 @@
 require 'rubygems'
 require 'dm-core'
+
+gem 'twitter', "0.4.2"
 require 'twitter'
 
 DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/db/barmanitto.sqlite3")
