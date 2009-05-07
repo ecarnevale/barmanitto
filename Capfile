@@ -1,6 +1,6 @@
 load 'deploy' if respond_to?(:namespace)
 
-set :application, "barmanitto"
+set :application, "barmanitto.com"
 set :repository,  "git@github.com:mikamai/barmanitto.git"
 set :deploy_to,   "/var/apps/#{application}"
 
