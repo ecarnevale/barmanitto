@@ -5,6 +5,11 @@ body {
 	background: #FFF url(images/pixelv.jpg) repeat-x left top;
 	font-size:1em;
 	font-family: Constantia, Georgia, serif;
+	color: #222;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: #000;
 }
 
 a img {
@@ -63,6 +68,10 @@ a img {
 	text-align: center;
 }
 
+#tweets {
+	margin-bottom: 10px;
+}
+
 .tweet {
 	font-size: 1.2em;
 	padding: 0.7em 0 0.7em 0.5em;
@@ -81,4 +90,15 @@ a img {
 #footer {
 	padding: 10px;	
 	font-size: 0.8em;
+}
+
+#more-tweets {
+	border: 1px solid #BBB;	
+	text-align: center;
+}
+
+#more-tweets a {
+	display: block;
+	height: 100%;
+	line-height: 30px;
 }

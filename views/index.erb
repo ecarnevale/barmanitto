@@ -1,62 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<title>BarManitto</title>
-	<script type="text/javascript" charset="utf-8" src="/javascripts/prototype.js"></script>
-	<link rel="stylesheet" href="/stylesheets/style.css" type="text/css" media="screen" charset="utf-8" />
-</head>
-
-<body>
-	<div id="container">
-		<div id="header">
+<% @tweets.each_with_index do |tweet, index| %>	
+	<div class="tweet" id="tweet-<%= index + @offset %>">
+		<div class="picture">
+			<img src="<%= tweet.profile_image_url %>" />
 		</div>
-		<div id="content">			
-			<div id="left">
-				<div class="top">					
-					<p><img src="/images/bar.jpg" /> Ricordate quei bar di una volta? Quelli con il barista gentile e con un sorriso per tutti? Quelli dove tra un caffé è un Cynar c'era spazio per una parola di conforto nei momenti difficili? Quelli dove quando la moneta mancava l'accoglienza non mancava mai?</p>
-		      <p>Questo sito è un tributo al più grande di quei Bar, lo storico Bar Manitto di Busalla (GE), che ha accolto generazioni di naviganti, contadini, montanari, liguri, lombardi, pugliesi, marchigiani.</p>
-		      <p>Questo sito è un tributo all'ultimo barista del Bar Manitto, che ha tirato duro finché ha potuto la su attività, nonostante la vocazione da Parrucchiere.</p>
-		      <p>Questo sito è un tributo ad un pezzo di storia italiana che rimarrà per sempre con noi.</p>
-		      <p>E magari tra qualche anno ci vedremo tutti, come una volta, per un caffé al Bar Manitto.</p>
-				</div>
-				<div id="twitter">
-					<img src="/images/twitter.jpg" />
-				</div>
-				<div id="posts">
-					<% @tweets.each do |tweet| %>	
-						<div class="tweet">
-							<div class="picture">
-								<img src="<%= tweet.profile_image_url %>" />
-							</div>
-							<div class="post">
-								<%= tweet.text %>
-							</div>					
-							<div class="clear"></div>		
-						</div>
-					<% end %>
-				</div>				
-			</div>
-			<div id="right">
-				<div id="banner">
-					<img src="/images/banner.jpg" />
-				</div>
-				<fb:comments xid="barmanitto"></fb:comments>				
-			</div>
-			<div class="clear"></div>
-			<div id="footer">
-				<p>© 2009 <a style="color: rgb(0, 0, 0); font-weight: bold;" href="http://mikamai.com">MI<span style="color: red;">K</span>AMAI</a></p>
-			</div>
-		</div>				
-	</div>	
-	<script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" type="text/javascript"></script>
-	<script type="text/javascript" charset="utf-8">
-		FB_RequireFeatures(["XFBML"], function(){
-			FB.Facebook.init("228c1d88b5b2121289e88adde9447d3c", "/xd_receiver.htm");	
-		});
-	</script>
-</body>
-</html>
-
+		<div class="post">
+			<%= tweet.text %>
+		</div>					
+		<div class="clear"></div>		
+	</div>
+<% end %>
