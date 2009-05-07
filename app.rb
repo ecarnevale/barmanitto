@@ -3,6 +3,6 @@ require 'bar_manitto'
 require 'sinatra'
 
 get '/' do
-  @tweets = BarManitto::Tweet.all(:order => [:created_at.desc])
+  @tweets = BarManitto::Tweet.all(:order => [:created_at.desc], :limit => 10)
   erb :index
 end

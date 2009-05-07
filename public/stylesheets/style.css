@@ -1,0 +1,84 @@
+/* Hi Liz :) */
+
+body {
+	margin: 0;
+	background: #FFF url(images/pixelv.jpg) repeat-x left top;
+	font-size:1em;
+	font-family: Constantia, Georgia, serif;
+}
+
+a img {
+	border: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+#container {
+	width: 1160px;	
+}
+
+#header {
+	height: 274px;
+	background: transparent url(images/header.jpg) no-repeat left top;
+	position: relative;
+}
+
+#fb-button {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+#content {
+	background: #FFF url(images/pixelo.jpg) repeat-y left top;		
+	padding: 20px 0 0 68px;
+}
+
+#left {
+	width: 410px;
+	margin-right: 120px;
+	padding: 0 10px;
+	float: left;
+}
+
+#left .top {
+	font-size: 1.1em;
+}
+
+#left .top p {
+	clear: both;
+}
+
+#left .top img {
+	float: left;
+}
+
+#right {
+	margin-left: 550px;
+}
+
+#twitter {
+	text-align: center;
+}
+
+.tweet {
+	font-size: 1.2em;
+	padding: 0.7em 0 0.7em 0.5em;
+	border-bottom: 1px dashed #D2DADA;
+}
+
+.tweet .picture {
+	float: left;
+	margin-right: 20px;
+}
+
+#banner {
+	margin-bottom: 20px;
+}
+
+#footer {
+	padding: 10px;	
+	font-size: 0.8em;
+}
