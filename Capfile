@@ -29,6 +29,7 @@ namespace :deploy do
 		  %w[tmp db].each do |folder|
 		    run "cd #{shared_path}; mkdir -p #{folder}; cd #{current_path}; rm -rf #{folder}; ln -s #{shared_path}/#{folder} #{folder}"
 	    end
+	    run "cd #{current_path}/config; rm -rf config.yml; ln -s #{shared_path}/config.yml config.yml"
 		end
 	end	
 end
