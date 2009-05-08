@@ -35,6 +35,13 @@
 			<div id="right">
 				<div id="banner">
 					<img src="/images/banner.jpg" />
+					<a href="#" id="button-coffee"><img src="/images/banner-coffee.jpg" /></a>
+				</div>
+				<div id="friend-selector" class="loading" style="display: none;">
+					<h3>Scegli un amico a cui offrire un caff&egrave;:</h3>
+					<div class="friends">
+						<ul></ul>
+					</div>					
 				</div>
 				<fb:comments xid="barmanitto"></fb:comments>				
 			</div>
@@ -44,10 +51,13 @@
 			</div>
 		</div>				
 	</div>	
-	<script type="text/javascript" charset="utf-8" src="/javascripts/jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/javascripts/prototype.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/javascripts/effects.js"></script>
 	<script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" type="text/javascript"></script>
 	<script type="text/javascript" src="/javascripts/application.js" charset="utf-8"></script>
-
+	<script type="text/javascript" charset="utf-8">
+		new	BarManitto('<%= config['global']['facebook_api_key'] %>', <%= config['global']['template_bundle_id'] %>);
+	</script>	
 	<script type="text/javascript">
 	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

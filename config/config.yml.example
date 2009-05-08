@@ -1,0 +1,6 @@
+database:
+  :adapter: sqlite3
+  :database: db/barmanitto.sqlite3
+global:
+  facebook_api_key: YOUR_API_KEY
+  template_bundle_id: TEMPLATE_BUNDLE_ID

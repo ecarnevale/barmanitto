@@ -4,8 +4,8 @@ require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'
 require 'bar_manitto'
-
 require 'rubygems'
+require 'sinatra'
 require 'twitter'
 
 task :default do
@@ -16,6 +16,7 @@ namespace :bar do
   namespace :manitto do
     desc 'Search for #barmanitto'
     task :crawl do
+      BarManitto.init
       BarManitto::Crawler.new('#barmanitto').crawl   
     end
   end

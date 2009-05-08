@@ -13,6 +13,4 @@ module BarManitto
     property :original_created_at,  DateTime
     property :created_at,           DateTime
   end
-  
-  DataMapper.auto_upgrade!
 end
