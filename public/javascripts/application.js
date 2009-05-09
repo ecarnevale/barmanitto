@@ -68,6 +68,6 @@ var BarManitto = Class.create({
 	sendCoffee: function(friend_id) {
 		var data = {"images":[{"href":"http://barmanitto.com", "src":"http://barmanitto.com/images/coffee.png?v=2"}]};
 		new FB.Connect.showFeedDialog(this.template_bundle_id, data, [friend_id], "", null, FB.RequireConnect.promptConnect, function(result, exception) {},
-		"BarManitto", {value: "Ti offro un caffè direttamente dal bar manitto!!"});
+		"BarManitto", {value: "Ti offro un caffè direttamente dal BarManitto!!"});
 	}
 });
