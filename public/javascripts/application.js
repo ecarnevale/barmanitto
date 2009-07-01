@@ -45,7 +45,7 @@ var BarManitto = Class.create({
 			parameters: { offset: offset },
 			insertion: 'bottom',
 			onLoading: function() { $('more-tweets').down('a').hide();   $('more-tweets').down('img').show(); },
-			onSuccess: function() { $('more-tweets').down('img').hide(); $('more-tweets').down('a').show(); },
+			onSuccess: function() { $('more-tweets').down('img').hide(); $('more-tweets').down('a').show(); }
 		});
 	},
 	
