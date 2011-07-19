@@ -2,7 +2,7 @@ module BarManitto
   class Tweet
     include DataMapper::Resource
     
-    property :id,                   Integer, :serial => true        
+    property :id,                   Serial
     property :text,                 Text
     property :to_user_id,           Integer
     property :to_user,              String, :length => 255

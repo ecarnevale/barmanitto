@@ -1,5 +1,7 @@
 require 'rubygems'
 require 'dm-core'
+gem 'dm-sqlite-adapter'
+require 'dm-migrations'
 gem 'twitter', "0.4.2"
 require 'twitter'
 require 'bar_manitto/crawler'
